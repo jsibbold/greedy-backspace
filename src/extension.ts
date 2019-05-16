@@ -33,7 +33,6 @@ export function activate(context: vscode.ExtensionContext) {
 						currentLine = document.lineAt(currentLineNum);
 					} else if (trimmedLeftText.length < leftText.length) {
 						var offset = leftText.length - trimmedLeftText.length;
-						win.showInformationMessage(offset.toString());
 						const edit = new vscode.WorkspaceEdit();
 						edit.delete(document.uri, new vscode.Range(new vscode.Position(currentLineNum, startPosition.character - offset), startPosition));
 						vscode.workspace.applyEdit(edit);
@@ -56,8 +55,7 @@ export function activate(context: vscode.ExtensionContext) {
 			if (!currentLine.isEmptyOrWhitespace) {
 				linePos = currentLine.text.trimRight().length;
 			}
-
-			//win.showInformationMessage(currentLineNum.toString());
+			
 			let endPosition = new vscode.Position(currentLineNum, linePos);
 
 			const edit = new vscode.WorkspaceEdit();
