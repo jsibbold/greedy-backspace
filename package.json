@@ -4,7 +4,7 @@
 	"description": "Greedily eats up whitespace until encountering a non-whitespace non-newline character.",
 	"version": "0.0.1",
 	"publisher": "jsibbold",
-	"repository": "https://github.com/jsibbold/greedy-backspace"
+	"repository": "https://github.com/jsibbold/greedy-backspace",
 	"engines": {
 		"vscode": "^1.34.0"
 	},
