@@ -2,11 +2,11 @@
 	"name": "greedy-backspace",
 	"displayName": "Greedy Backspace",
 	"description": "Greedily eats up whitespace until encountering a non-whitespace non-newline character.",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "jsibbold",
 	"repository": "https://github.com/jsibbold/greedy-backspace",
 	"engines": {
-		"vscode": "^1.34.0"
+		"vscode": "^1.68.1"
 	},
 	"categories": [
 		"Other"
@@ -32,10 +32,9 @@
 		"test": "npm run compile && node ./node_modules/vscode/bin/test"
 	},
 	"devDependencies": {
-		"typescript": "^3.3.1",
-		"vscode": "^1.1.28",
-		"tslint": "^5.12.1",
-		"@types/node": "^10.12.21",
-		"@types/mocha": "^2.2.42"
+		"typescript": "^4.7.4",
+		"tslint": "^6.1.3",
+		"@types/node": "^18.0.1",
+		"@types/vscode": "^1.68.1"
 	}
 }
